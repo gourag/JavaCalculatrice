@@ -1,0 +1,37 @@
+package calculatrice;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener; 
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import java.awt.GridLayout;
+
+public class Calculatrice extends JFrame {
+	
+	public int reslut;
+	
+	public Calculatrice()
+	{
+		JFrame fenetre = new JFrame();
+		fenetre.setVisible(true);
+		fenetre.setTitle("Calculatrice en JAVA");
+		fenetre.setSize(350, 400);
+		fenetre.setResizable(false);
+		fenetre.getContentPane().setLayout(new GridLayout(6, 4));
+		
+		JButton bouton1 = new JButton("1");
+		fenetre.getContentPane().add(bouton1, "1, 1");
+		JButton bouton2 = new JButton("2");
+		fenetre.getContentPane().add(bouton2, "1, 2");
+		JButton bouton3 = new JButton("3");
+		fenetre.getContentPane().add(bouton3, "1, 1");
+		
+	}
+	
+}
